@@ -27,7 +27,8 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"], avatar=message.get("avatar")):
         st.markdown(message["content"])
 
-if prompt := st.chat_input("Send a Message"):
+prompt = st.chat_input("Send a Message")
+if prompt:
     st.session_state.messages.append({"role": "user", "content": prompt, "avatar": "img/usericon.png"})
     with st.chat_message("user", avatar="img/usericon.png"):
         st.markdown(prompt)
