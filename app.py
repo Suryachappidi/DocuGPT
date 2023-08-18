@@ -3,10 +3,11 @@ import requests
 import time
 
 st.title("DocuGPT")
-# "https://gtemv618lc.execute-api.us-east-1.amazonaws.com/query-post-api"
+#1.  "https://gtemv618lc.execute-api.us-east-1.amazonaws.com/query-post-api"
+#2.  "https://ak0zrj23m4.execute-api.us-east-1.amazonaws.com/query"
 
 def get_response_from_api(query):
-    api_gateway_url = "https://ak0zrj23m4.execute-api.us-east-1.amazonaws.com/query"
+    api_gateway_url = "https://5ifa9uwezl.execute-api.us-east-2.amazonaws.com/query"
     payload = {"message": query}
 
     try:
