@@ -7,7 +7,7 @@ st.title("DocuGPT")
 #2.  "https://ak0zrj23m4.execute-api.us-east-1.amazonaws.com/query"
 
 def get_response_from_api(query):
-    api_gateway_url = "https://ppn8i4xwy5.execute-api.us-east-1.amazonaws.com/query"
+    api_gateway_url = "https://8mkxud6jih.execute-api.us-east-1.amazonaws.com/streamlitquery"
     payload = {"message": query}
 
     try:
